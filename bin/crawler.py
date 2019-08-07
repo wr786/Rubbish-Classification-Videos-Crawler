@@ -35,7 +35,7 @@ f.write('<div class="pusher">\
                         <a class="ui inverted button" target="_blank" href="">枫台</a>\
                     </div>\
                 </div>\
-            </div>')
+            </div>')                        #UI Originally designed by @lin714093880
 f.write('<div class="ui four column doubling stackable grid container" id="img-grid" style="margin: 10px">')
 while pagenum <= 10:#可自定义页数
     browser.get(url + str(pagenum))
