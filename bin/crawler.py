@@ -21,6 +21,7 @@ f.write('<html><head><title>枫台</title>\
     <style type="text/css">\
     img{width: 200px;height: 120px;top:50%;position: relative;}\
     .top{top:-40px;color:black;height:100px;background-color:grey;border:black;}\
+     ul li{list-style-type:none;}\
     </style></head><body>')
 f.write('<div class="top"><h1 style="font-size:65px;">枫台</h1><img style="width:auto;height:80%;position:relative;top:100%" alt="" src="https://s2.ax1x.com/2019/08/07/e5aGbn.png"></div><br/>')
 f.write('<div class="ui four column doubling stackable grid container" id="img-grid" style="margin: 10px">')
