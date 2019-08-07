@@ -1,4 +1,4 @@
 @echo off
 python .\bin\crawler.py
-echo "bilibili获取成功！"
+echo "获取成功！"
 pause
