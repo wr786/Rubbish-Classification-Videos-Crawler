@@ -10,3 +10,5 @@
 1. 点击LINK START.bat
 2. 在同样的目录下找到fengtai.html
 3. 双击打开，就能得到bilibili关于“垃圾分类”的搜索结果的前10页视频导航（点击即可导向原网站链接）
+4. 如果打开发生错误了的话，请把该目录下的chromedriver.exe复制入“C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe”目录。
+
