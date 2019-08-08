@@ -66,14 +66,14 @@ f2.write('<div class="pusher">\
                         <a class="ui inverted button" target="_blank" href="">枫台</a>\
                     </div>\
                 </div>\
-            </div>')
+            </div><br/>')
 url = "https://www.zhihu.com/search?type=content&q=%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB"
 browser.get(url)
 data2 = browser.page_source.encode("gbk","ignore").decode("gbk")
 pattern2 = re.compile(r'<meta itemprop="url" content="(.*?)">.*?<meta itemprop="name" content="(.*?)">.*?<span class="RichText ztext CopyrightRichText-richText" itemprop="text"><b>(.*?)</b>：(.*?)</span>')
 items = re.findall(pattern2,data2)
 for item in items:
-    f2.write('<a href="' + item[0] + '"<p style="font-size:28px;color:white;">' + item[1] + '</p>' + '<p style="font-size:12px;color:white;">' + item[2] + ':' + item[3] + '</p></a><br/>\n')
+    f2.write('<div class="ui segment"><a href="' + item[0] + '"<p style="font-size:28px;color:black;font-weight:bold;">' + item[1] + '</p>' + '<p style="font-size:12px;color:black;">' + item[2] + ':' + item[3] + '</p></a></div><br/>\n')
 #response = urllib.request.urlopen(url)
 #data = response.read().decode('utf-8')
 browser.close()
